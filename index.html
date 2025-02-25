@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payoo App</title>
+    <!-- dailsyUI cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.8/daisyui.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+
+</head>
+<body class="bg-slate-900 ">
+    <section class=" max-w-md min-h-screen bg-slate-200 mx-auto p-6">
+
+        <header>
+            <nav>
+                <div class=" flex justify-center items-center relative mt-24 w-48 mx-auto mb-6">
+                    <img class="mx-auto absolute" src="assets/bg.png" alt="">
+                    <img class="mx-auto" src="assets/Group.png" alt="">
+                </div>
+            </nav>
+        </header>
+
+        <!-- login form  -->
+        <div class="">
+              <div class="card bg-slate-200 w-full max-w-sm shrink-0 shadow-2xl">
+                <form class="card-body">
+                  <fieldset class="fieldset">
+                    <label class="fieldset-label">Account number</label>
+                    <input value="12345678901" id="account-value" type="number" class="input" placeholder="Enter your number" required/>
+                    <label class="fieldset-label">PIN</label>
+                    <input value="1234" id="pin-number" type="number" class="input" placeholder="Type your PIN" required/>
+                    <div><a class="link link-hover">Forgot pin?</a></div>
+                    <button id="login-btn" class="btn btn-neutral mt-4">Login</button>
+                  </fieldset>
+                </form>
+              </div>
+            </div>
+          </div>
+
+    </section>
+    <script src="script/form.js"></script>
+</body>
+</html>
