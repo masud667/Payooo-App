@@ -12,6 +12,8 @@ document.getElementById('login-btn').addEventListener('click', function(event){
     if (convertedPin === 1234) {
         const sum = convertedMainBalance + convertedAmount ;
         document.getElementById('main-balance').innerText = sum;
+
+        
     }
     else{
        alert('Give valid pin')

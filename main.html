@@ -15,10 +15,10 @@
             <nav class="flex justify-around items-center ">
                 <img class="w-16" src="assets/Group.png" alt="">
                 <div class="text-center font-bold">
-                    <h1 class="text-2xl">$ <span id="main-balance">4500</span></h1>
+                    <h1 class="text-2xl">$<span id="main-balance">4500</span></h1>
                     <p>available balance</p>
                 </div>
-                <button class="btn rounded-xl bg-slate-200 border border-slate-300">Log Out</button>
+                <button id="logout" class="btn rounded-xl bg-slate-200 border border-slate-300 hover:bg-blue-200">Log Out</button>
             </nav>
         </header>
 
@@ -47,7 +47,7 @@
                     <img class="mx-auto w-8" src="assets/purse1.png" alt="">
                     <p class="">Pay bill</p>
                 </div>
-                <div class="border border-slate-300 rounded-xl py-6 text-center space-y-2 hover:border-slate-700 hover:bg-blue-100">
+                <div id="transaction-box" class="border border-slate-300 rounded-xl py-6 text-center space-y-2 hover:border-slate-700 hover:bg-blue-100">
                     <img class="mx-auto w-8" src="assets/transaction1.png" alt="">
                     <p class="">Transactions</p>
                 </div>
@@ -59,7 +59,7 @@
                 <h1 class="text-center pt-3 text-lg font-bold">Add Money</h1>
               <form class="card-body">
                 <label for="">Select a bank</label>
-                <select class="select">
+                <select id="bank" class="select">
                     <option disabled selected>Select Bank</option>
                     <option value="bKash">bKash</option>
                     <option value="Nagad">Nagad</option>
@@ -69,7 +69,7 @@
                 <fieldset class="fieldset">
                   
                   <label class="fieldset-label">Account number</label>
-                  <input value="12345678901" id="account-value" type="number" class="input" placeholder="Enter your number" required/>
+                  <input id="account-value" type="number" class="input" placeholder="Enter your 11 digit number" required/>
 
                   <label class="fieldset-label">Amount</label>
                   <input id="amount-value" type="number" class="input" placeholder="Enter your amount" required/>
@@ -78,9 +78,9 @@
                   <input value="1234" id="pin-number" type="number" class="input" placeholder="Type your PIN" required/>
 
                   <div>
-                    <a class="link link-hover text-blue-800">Forgot pin?</a>
+                    <a  id="forgot" class="link link-hover text-blue-800">Forgot pin?</a>
                 </div>
-                  <button id="login-btn" class="btn btn-neutral mt-4 bg-blue-900">Login</button>
+                  <button id="addMoney-btn" class="btn btn-neutral mt-4 bg-blue-900">Add Money</button>
                 </fieldset>
               </form>
             </div>
@@ -95,7 +95,7 @@
                 <fieldset class="fieldset">
                   
                   <label class="fieldset-label">Account number</label>
-                  <input value="12345678901" id="account-value" type="number" class="input" placeholder="Enter your number" required/>
+                  <input  id="cashout-account" type="number" class="input" placeholder="Enter your 11 digit number" required/>
 
                   <label class="fieldset-label">Amount</label>
                   <input id="cashout-amount-value" type="number" class="input" placeholder="Enter your amount" required/>
@@ -103,20 +103,23 @@
                   <label class="fieldset-label">PIN</label>
                   <input value="1234" id="cashout-pin-number" type="number" class="input" placeholder="Type your PIN" required/>
 
-                  <div>
-                    <a class="link link-hover text-blue-800">Forgot pin?</a>
-                </div>
-                  <button id="cashout-login-btn" class="btn btn-neutral mt-4 bg-blue-900">Login</button>
+                  <button id="cashout-login-btn" class="btn btn-neutral mt-4 bg-blue-900">Cash out</button>
                 </fieldset>
               </form>
             </div>
-          
+         
         </div>
+
+        <!-- transaction  -->
+         <div id="transection" class="py-10 w-full mx-auto">
+          <h1 class="text-center py-3 text-3xl font-bold text-red-500  bg-lime-200 ">Transactions</h1>
+        
+         </div>
         </section>
     </section>
-    
     <script src="script/toggle.js"></script>
-    <script src="script/addMoney.js"></script>
+    <script src="script/addMoney2.js"></script>
     <script src="script/cashout.js"></script>
+    <script src="script/utilities.js"></script>
 </body>
 </html>
